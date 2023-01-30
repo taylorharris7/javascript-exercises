@@ -1,0 +1,14 @@
+/**
+ * @param {number} n
+ * @return {number}
+ */
+var tribonacci = function(n) {
+    if (n == 0 || n == 1 || n == 2) {
+        if (n == 0 || n == 1) {
+            return n;
+        } 
+        return 1;
+    }
+
+    return tribonacci(n-3) + tribonacci(n-2) + tribonacci(n-1);
+};
